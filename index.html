@@ -144,6 +144,31 @@
     .cta p{margin:0;color:var(--muted);line-height:1.5}
     footer{padding:26px 0 40px;color:var(--muted);border-top:1px solid var(--line);margin-top:18px}
     .mini{font-size:13px}
+    .fleet{
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.fleetItem{
+  padding:22px 28px;
+  border:1px solid rgba(212,175,55,.25);
+  border-radius:14px;
+  background:rgba(255,255,255,.02);
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#fff;
+  transition:all .3s ease;
+}
+
+.fleetItem:hover{
+  background:rgba(212,175,55,.08);
+  border-color:rgba(212,175,55,.5);
+  transform:translateX(6px);
+}
   </style>
 </head>
 
@@ -231,67 +256,13 @@
     <h2>Vozila</h2>
     <p>čisto • komforno • klimatizovano</p>
   </div>
+ <div class="fleet">
 
-  <div class="vgrid">
-
-    <article class="vcard">
-      <div class="vimg">
-        <img src="sprinter.jpg" alt="Mercedes Sprinter 8+1">
-      </div>
-      <div class="vmeta">
-        <h3>Mercedes Sprinter 8+1</h3>
-        <div class="vline">Grupni transferi • EU relacije</div>
-      </div>
-    </article>
-
-    <article class="vcard">
-      <div class="vimg">
-        <img src="vclass.jpg" alt="Mercedes V Class">
-      </div>
-      <div class="vmeta">
-        <h3>Mercedes V Class</h3>
-        <div class="vline">VIP transfer • Aerodrom</div>
-      </div>
-    </article>
-
-    <article class="vcard">
-      <div class="vimg">
-        <img src="viano.jpg" alt="Mercedes Viano">
-      </div>
-      <div class="vmeta">
-        <h3>Mercedes Viano</h3>
-        <div class="vline">Komfor • Diskrecija</div>
-      </div>
-    </article>
-
-    <article class="vcard">
-      <div class="vimg">
-        <img src="passat.jpg" alt="Volkswagen Passat">
-      </div>
-      <div class="vmeta">
-        <h3>Volkswagen Passat</h3>
-        <div class="vline">Poslovne vožnje</div>
-      </div>
-    </article>
-
-    <article class="vcard">
-      <div class="vimg">
-        <img src="q5.jpg" alt="Audi Q5">
-      </div>
-      <div class="vmeta">
-        <h3>Audi Q5</h3>
-        <div class="vline">Premium SUV • VIP</div>
-      </div>
-    </article>
-
-  </div>
-</section>
-      <div class="gallery">
-        <!-- UBACI SLIKE: assets/viano-1.jpg ... -->
-        <div class="shot"><img src="assets/viano-1.jpg" alt="Mercedes Viano"></div>
-        <div class="shot"><img src="assets/viano-2.jpg" alt="Enterijer"></div>
-        <div class="shot"><img src="assets/skoda-1.jpg" alt="Škoda"></div>
-      </div>
+  <div class="fleetItem">MERCEDES SPRINTER 8+1</div>
+  <div class="fleetItem">MERCEDES V CLASS</div>
+  <div class="fleetItem">MERCEDES VIANO</div>
+  <div class="fleetItem">VOLKSWAGEN PASSAT</div>
+  <div class="fleetItem">AUDI Q5</div>
     </section>
 
     <section id="kontakt">
