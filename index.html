@@ -91,14 +91,15 @@
       overflow:hidden;
     }
     .cardin{padding:18px}
-    .heroimg{
-      position:relative;
-      min-height:320px;
-      background:
-        radial-gradient(420px 220px at 60% 30%, rgba(212,175,55,.22), transparent 60%),
-        radial-gradient(420px 220px at 30% 70%, rgba(255,221,122,.14), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-    }
+   .heroimg{
+  position:relative;
+  z-index:3;
+  min-height:320px;
+  background:
+    radial-gradient(420px 220px at 60% 30%, rgba(212,175,55,.22), transparent 60%),
+    radial-gradient(420px 220px at 30% 70%, rgba(255,221,122,.14), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+}
     .heroimg img{
   width:75%;
   max-width:420px;
@@ -106,7 +107,7 @@
   display:block;
   margin:40px auto;
   position:relative;
-  z-index:2;
+  z-index:5;
 }
     .badge{
       position:absolute;left:14px;top:14px;
