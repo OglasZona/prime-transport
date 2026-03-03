@@ -206,6 +206,60 @@
   letter-spacing:2px;
   color:rgba(212,175,55,.7);
 }
+    .galleryWrap{
+  margin-top:60px;
+  padding:50px 0;
+  position:relative;
+  background:
+    radial-gradient(600px 300px at 20% 0%, rgba(212,175,55,.12), transparent 60%),
+    radial-gradient(500px 250px at 80% 100%, rgba(212,175,55,.10), transparent 60%);
+}
+
+.galleryWrap::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.9));
+  z-index:-1;
+}
+
+.rail{
+  margin:18px 0;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.track{
+  display:flex;
+  gap:16px;
+  padding:14px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+}
+
+.track img{
+  flex:0 0 auto;
+  width:380px;
+  height:250px;
+  object-fit:cover;
+  border-radius:18px;
+  border:1px solid rgba(212,175,55,.25);
+  transition:all .4s ease;
+  scroll-snap-align:start;
+}
+
+.track img:hover{
+  transform:scale(1.05);
+  box-shadow:0 20px 40px rgba(212,175,55,.25);
+}
+
+.track::-webkit-scrollbar{
+  height:8px;
+}
+.track::-webkit-scrollbar-thumb{
+  background:rgba(212,175,55,.3);
+  border-radius:999px;
+}
   </style>
 </head>
 
@@ -294,7 +348,30 @@
   <div class="fleetItem">VOLKSWAGEN PASSAT</div>
   <div class="fleetItem">AUDI Q5</div>
     </section>
+<section class="galleryWrap">
+  <div class="secTitle">
+    <h2>Galerija vozila</h2>
+    <p>Premium detalji • Enterijer • Eksterijer</p>
+  </div>
 
+  <div class="rail">
+    <div class="track">
+      <img src="autoa.png" alt="">
+      <img src="autob.png" alt="">
+      <img src="autoc.png" alt="">
+      <img src="autog.png" alt="">
+    </div>
+  </div>
+
+  <div class="rail">
+    <div class="track">
+      <img src="autoj.png" alt="">
+      <img src="autol.png" alt="">
+      <img src="autom.png" alt="">
+      <img src="autoa.png" alt="">
+    </div>
+  </div>
+</section>
     <section id="kontakt">
       <div class="cta">
         <div>
