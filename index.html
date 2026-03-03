@@ -107,16 +107,19 @@
   display:block;
   margin:40px auto;
   position:relative;
+  z-index:2;
+}.badge{
+  position:absolute;
+  left:14px;
+  top:14px;
+  padding:10px 12px;
+  border-radius:999px;
+  background:rgba(7,8,11,.72);
+  border:1px solid rgba(212,175,55,.35);
+  color:var(--gold2);
+  font-weight:800;
   z-index:5;
 }
-    .badge{
-      position:absolute;left:14px;top:14px;
-      padding:10px 12px;border-radius:999px;
-      background:rgba(7,8,11,.72);
-      border:1px solid rgba(212,175,55,.35);
-      color:var(--gold2);
-      font-weight:800;
-    }
     section{padding:18px 0}
     .secTitle{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:0 0 12px}
     .secTitle h2{margin:0;font-size:22px;letter-spacing:-.2px}
